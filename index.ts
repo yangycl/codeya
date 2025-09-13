@@ -1,8 +1,8 @@
 /// <reference types="jquery" />
 function run():void{
-    let html = ($("#html") as JQuery<HTMLTextAreaElement>).val();
-    let js = ($("#js") as JQuery<HTMLTextAreaElement>).val();
-    var css =  ($("#css")as JQuery<HTMLTextAreaElement>).val();
+    let html = ($("#html") as JQuery<HTMLTextAreaElement>).val() ??"";
+    let js = ($("#js") as JQuery<HTMLTextAreaElement>).val() ??"";
+    var css =  ($("#css")as JQuery<HTMLTextAreaElement>).val() ??"";
     if(!html) throw new Error("HTML is undefined");
     if(!js) throw new Error("JS is undefined");
     if(!css) throw new Error("CSS is undefined");

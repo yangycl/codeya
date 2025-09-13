@@ -1,9 +1,10 @@
 "use strict";
 /// <reference types="jquery" />
 function run() {
-    let html = $("#html").val();
-    let js = $("#js").val();
-    var css = $("#css").val();
+    var _a, _b, _c;
+    let html = (_a = $("#html").val()) !== null && _a !== void 0 ? _a : "";
+    let js = (_b = $("#js").val()) !== null && _b !== void 0 ? _b : "";
+    var css = (_c = $("#css").val()) !== null && _c !== void 0 ? _c : "";
     if (!html)
         throw new Error("HTML is undefined");
     if (!js)
